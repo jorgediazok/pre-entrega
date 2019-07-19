@@ -16,29 +16,35 @@
     <div id="principal">
           <div id="foto-wall">
         <h1>
-          Dejá tu comentario y qué material te gustaría que subieramos!
+          Dejá tu comentario y qué material te gustaría que subamos!
         </h1>
         </div>
-        <form action="/action_page.php" class="formulario" novalidate>
+        <form class="formulario">
 
           <fieldset>
+
           <br>
-          <input type="text" name="firstname" placeholder="Nombre"><br>
+          <input type="text" id="nombre" placeholder="Nombre" autofocus><br>
           <br>
-          <input type="text" name="lastname" placeholder="Apellido"><br>
+          <input type="text" id="apellido" placeholder="Apellido"><br>
           <br>
-          <input type="text" name="País" placeholder="País"><br>
+          <input type="text" id="pais" placeholder="País"><br>
           <br>
-          <input type="email" name="E-mail" placeholder="E-mail"><br>
+          <input type="email"id="email" placeholder="E-mail"><br>
 
           <textarea name="message" rows="10" cols="30" class="sugerencias">Dejanos tu sugerencia para mejorar nuestro sitio.
               </textarea><br>
-          <input type="submit" value="Enviar"> <input type="reset" value="Resetear campos">
+
+          <input type="submit" id="boton1" class="boton" onclick="validarDatos()"></button>
 
           </fieldset>
           
 
         </form>
-      
+
+        <script src="contact.js"></script>
+
+
+        
   </body>
 </html>

@@ -2,17 +2,20 @@ var nombre = document.getElementById("nombre");
 var apellido = document.getElementById("apellido");
 var pais = document.getElementById("pais");
 var correo = document.getElementById("email");
+var album = document.getElementById("album");
 
 function validarDatos() {
   nombre.addEventListener("input", corroborarNombre);
   apellido.addEventListener("input", corroborarApellido);
   pais.addEventListener("input", corroborarPais);
   correo.addEventListener("input", corroborarMail);
+  album.addEventListener("select", corroborarAlbum);
 
   corroborarNombre();
   corroborarApellido();
   corroborarPais();
   corroborarMail();
+  corroborarAlbum();
 }
 
 function corroborarNombre() {
@@ -44,6 +47,14 @@ function corroborarMail() {
     correo.setCustomValidity("Por favor ingresá tu mail");
   } else {
     correo.setCustomValidity("");
+  }
+}
+
+function corroborarAlbum() {
+  if (album.value == "") {
+    album.setCustomValidity("Elegi un album por favor");
+  } else {
+    album.setCustomValidity("");
   }
 }
 

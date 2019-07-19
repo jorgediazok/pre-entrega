@@ -1,6 +1,9 @@
 body {
-  background: url(images/tsoy.jpg) black;
-  background-blend-mode: lighten;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/tsoy4.jpg);
+  background-size: cover;
 }
 
 nav {
@@ -26,7 +29,7 @@ nav {
   ); /*El estandar por defecto*/
   overflow: hidden;
   padding: 10px;
-  width: 950px;
+  width: 100vw;
 }
 
 nav ul {

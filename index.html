@@ -4,38 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
-    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Kalam&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles sheet -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <title>De Rusia con amor - Viktor Tsoi</title>
   </head>
-  <body>
-    
-      <iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 
+  <body>
+    <!-- Para que chrome me deje usar el autoplay -->
+    <!--
+  <iframe
+      src="silence.mp3"
+      allow="autoplay"
+      id="audio"
+      style="display:none"
+    ></iframe>
+-->
     <nav>
-      <ul>
-        <li><a title="Home" href="#">Home</a></li>
-        <li><a title="Historia" href="#">Historia</a></li>
-        <li><a title="Videos" href="#">Videos</a></li>
-        <li><a title="Descargas" href="#">Descargas</a></li>
-        <li><a title="Contacto" href="contacto.html" target="_blank">Contacto</a></li>
-      </ul>
-      <h1 class="tributo">Un tributo a Viktor Tsoi</h1>
+      <div class="poronga">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Descargas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
+
     <main></main>
+
     <section id="reproductor">
-        <video id="period" width="720" height="400" autoplay controls loop
-        poster ="images/tsoy3.jpg">
-        <source src="videos/Кино - Место для шага вперед.mp4">
-        <source src="videos/Кино - Место для шага вперед.ogg">
-        </video>
-        <section>
+      <video
+        id="period"
+        width="720"
+        height="400"
+        controls
+        loop
+        poster="images/tsoy3.jpg"
+      >
+        <source src="videos/Кино - Место для шага вперед.mp4" />
+        <source src="videos/Кино - Место для шага вперед.ogg" />
+      </video>
+    </section>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Seguinos en nuestras redes sociales</h5>
+            <p class="grey-text text-lighten-4">
+              You can use rows and columns here to organize your footer content.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2014 JorgeWebDevelopment
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+      <img src="images/logo5.png" class="logo" />
+    </footer>
   </body>
 </html>

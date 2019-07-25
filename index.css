@@ -19,7 +19,7 @@ main {
   background-size: cover;
 }
 
-nav {
+.nav-principal {
   background: black;
   height: 90px;
 }
@@ -50,13 +50,17 @@ nav {
 }
 
 #reproductor {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  padding: 40px;
+  background-color: green;
+  text-align: center;
+  padding: 5em;
 }
 
 #period {
-  margin-top: 20px;
+  background-color: red;
+}
+
+#botonera {
+  background-color: blue;
+  color: yellow;
+  width: 600px;
 }

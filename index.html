@@ -27,6 +27,9 @@
     <!-- Styles sheet -->
     <link rel="stylesheet" type="text/css" href="index.css" />
 
+    <!-- Iconos -->
+    <link rel="stylesheet" href="iconos.css">
+
     <title>De Rusia con amor - Viktor Tsoi</title>
   </head>
 
@@ -40,7 +43,7 @@
       style="display:none"
     ></iframe>
 
-    <nav>
+    <nav class="nav-principal">
       <div id="navegador">
         <a href="/"><img src="images/logo4.jpg" class="foto-nav"/></a>
 
@@ -60,13 +63,19 @@
         id="period"
         width="720"
         height="400"
-        controls
         loop
         poster="images/tsoy3.jpg"
       >
         <source src="videos/Кино - Место для шага вперед.mp4" />
         <source src="videos/Кино - Место для шага вперед.ogg" />
       </video>
+      <nav id="botonera">
+        <button id="reiniciar" onclick="reiniciar()"><span class="icon-stop"></span></button>
+        <button id="atras" onclick="saltar(-10)"><span class="icon-backward"></span></button>
+        <button id="adelante"onclick= "saltar(10)"><span class="icon-forward2"></span></button>
+        <button id="reproducir" onclick="reproducir()"><span class="icon-play2"></span></button>
+        </button>
+      </nav>
     </section>
 
     <footer class="page-footer">
@@ -97,5 +106,7 @@
       </div>
       <img src="images/logo5.png" class="logo" />
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

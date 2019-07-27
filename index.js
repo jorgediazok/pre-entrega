@@ -20,9 +20,3 @@ function reiniciar() {
 function saltar(value) {
   video.currentTime += value;
 }
-
-//carrousel
-
-$(".carousel-section").carousel({
-  interval: 2000
-});

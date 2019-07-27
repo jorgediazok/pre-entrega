@@ -17,13 +17,18 @@
 
 
     <!-- Styles sheet -->
+    <link rel="stylesheet" href="./lib/swipebox/src/css/swipebox.min.css" />
+    <link
+      rel="stylesheet"
+      href="./lib/justified-gallery/css/justifiedGallery.css"
+    />
     <link rel="stylesheet" type="text/css" href="index.css" />
    
 
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/95cc901799.js"></script>
-
-
+    
+    
     <title>De Rusia con amor - Viktor Tsoi</title>
     
   </head>
@@ -71,7 +76,7 @@
       </div>
     </section>
 
-    <h1>Swipebox test</h1>
+    <h1>Grupo Kino en imágenes</h1>
     <div class="fotos-principal">
       <a
         href="./photos/8083451788_552becfbc7_b.jpg"
@@ -96,7 +101,9 @@
       </a>
       <a href="./photos/7062575651_b23918b11a_b.jpg" title="Maybe spring">
         <img src="./photos/7062575651_b23918b11a_m.jpg" />
-      </a>
+      </a></div>
+      <br />
+      <div class="fotos-principal">
       <a href="./photos/6841267340_855273fd7e_b.jpg" title="Love">
         <img src="./photos/6841267340_855273fd7e_m.jpg" />
       </a>
@@ -114,7 +121,7 @@
       </a>
     </div>
     <br />
-    <div class="swipeboxEx">
+    <div class="fotos-principal">
       <a href="./photos/6916180091_9c9559e463_b.jpg" title="The Hope">
         <img src="./photos/6916180091_9c9559e463_m.jpg" />
       </a>
@@ -159,13 +166,18 @@
       $('.fotos-principal').each(function(i, el) {
         $(el)
           .justifiedGallery({
-            rel: 'gal' + i
+            rel: 'gal' + i,
+            lastRow: 'center',
+            margins: 15,
           })
           .on('jg.complete', function() {
             if (i == 0) $('.fotos-principal a').swipebox(); //swipebox, wants to be called only once to work properly
           });
       });
     </script>
+
+    <!--Index JS-->
+    <script src="index.js"></script>
      
   </body>
 </html>

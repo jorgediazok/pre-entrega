@@ -22,3 +22,7 @@ function saltar(value) {
 }
 
 //carrousel
+
+$(".carousel-section").carousel({
+  interval: 2000
+});

@@ -20,8 +20,10 @@ main {
 }
 
 .nav-principal {
-  background: black;
+  width: 100%;
   height: 90px;
+  background-color: black;
+  list-style: none;
 }
 
 .foto-nav {
@@ -32,21 +34,31 @@ main {
   top: -13px;
 }
 
-#navegador li {
-  float: right;
-}
-
-#navegador li a {
+.nav-items {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-left: auto;
+  align-items: center;
+  width: 40%;
+  height: 100%;
   color: white;
   text-decoration: none;
-  font-family: "Acme", sans-serif;
-  font-size: 25px;
-  margin-bottom: 10px;
 }
 
-#navegador li a:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "Kalam", cursive;
+}
+
+a:hover,
+a:active {
+  color: #fdc806;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #reproductor {

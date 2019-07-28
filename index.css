@@ -12,16 +12,15 @@ body {
 }
 
 main {
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
   background-image: url(images/tsoy4.jpg);
   background-size: cover;
 }
 
+/*barra navegacion*/
+
 .nav-principal {
   width: 100%;
-  height: 90px;
+  height: 100px;
   background-color: black;
   list-style: none;
 }
@@ -38,10 +37,6 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  margin-left: auto;
-  align-items: center;
-  width: 40%;
-  height: 100%;
   color: white;
   text-decoration: none;
 }
@@ -60,6 +55,8 @@ a:active {
   text-decoration: none;
   cursor: pointer;
 }
+
+/*reproductor*/
 
 #reproductor {
   background-color: white;
@@ -88,6 +85,8 @@ a:active {
   padding: 1em;
 }
 
+/* Remeras */
+
 h1 {
   display: inline-block;
   margin-left: 37%;
@@ -95,7 +94,6 @@ h1 {
   border: 3px solid #fdc806;
 }
 
-/* Remeras */
 .cabecera-cards {
   display: inline-block;
   margin-top: 50px;

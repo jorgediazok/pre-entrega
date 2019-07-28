@@ -1,57 +1,13 @@
 body {
-  background-image: url(images/tsoy5.jpg);
+  background-image: url(images/tsoy23.jpg);
   background-size: cover;
   font-family: "Kalam", cursive;
   color: black;
 }
 
-#foto-wall {
-  border-radius: 1000px;
-  background: rgba(235, 233, 249, 1);
-  background: -moz-linear-gradient(
-    top,
-    rgba(235, 233, 249, 1) 0%,
-    rgba(216, 208, 239, 1) 50%,
-    rgba(206, 199, 236, 1) 51%,
-    rgba(193, 191, 234, 1) 100%
-  );
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, rgba(235, 233, 249, 1)),
-    color-stop(50%, rgba(216, 208, 239, 1)),
-    color-stop(51%, rgba(206, 199, 236, 1)),
-    color-stop(100%, rgba(193, 191, 234, 1))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(235, 233, 249, 1) 0%,
-    rgba(216, 208, 239, 1) 50%,
-    rgba(206, 199, 236, 1) 51%,
-    rgba(193, 191, 234, 1) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(235, 233, 249, 1) 0%,
-    rgba(216, 208, 239, 1) 50%,
-    rgba(206, 199, 236, 1) 51%,
-    rgba(193, 191, 234, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(235, 233, 249, 1) 0%,
-    rgba(216, 208, 239, 1) 50%,
-    rgba(206, 199, 236, 1) 51%,
-    rgba(193, 191, 234, 1) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(235, 233, 249, 1) 0%,
-    rgba(216, 208, 239, 1) 50%,
-    rgba(206, 199, 236, 1) 51%,
-    rgba(193, 191, 234, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c1bfea', GradientType=0 );
+h1 {
+  color: #e0ca5b;
+  text-align: center;
 }
 
 .formulario {
@@ -64,19 +20,20 @@ body {
 }
 
 .boton {
-  background: #3d85c6;
-  background: linear-gradient(#3d85c6, #000000);
+  background: #e0ca5b;
   border-radius: 1000px;
   padding: 8px 20px;
-  color: #ffffff;
+  color: black;
   display: inline-block;
   font: normal bold 16px/1 "Roboto", sans-serif;
   text-align: center;
   text-shadow: 1px 1px #000000;
   margin-top: 15px;
+  border: 0;
 }
 
 #reproductor {
   text-align: center;
   margin-bottom: 60px;
+  color: #e0ca5b;
 }

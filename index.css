@@ -91,6 +91,78 @@ a:active {
 h1 {
   display: inline-block;
   margin-left: 37%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border: 3px solid #fdc806;
+}
+
+/* Remeras */
+.cabecera-cards {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30%;
+  text-align: center;
+  padding: 3%;
+  border: solid 3px #fdc806;
+}
+
+.centrado {
+  margin: 0 auto;
+  padding: 0 0.8em;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background: white;
+  margin-bottom: 2em;
+  width: 32%;
+  border: solid 2px #fdc806;
+}
+
+.a-tienda {
+  font-size: 1em;
+  text-align: center;
+  color: black;
+}
+
+.card-content {
+  padding: 3em;
+}
+
+.card-content p {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.img-card {
+  height: 300px;
+  width: 300px;
+}
+
+.en-linea {
+  color: black;
+}
+
+.en-linea:hover {
+  color: #fdc806;
+}
+
+/*footer*/
+
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+  background: black;
+  color: #fdc806;
+  margin-top: 30px;
+}
+
+.social-icon {
+  margin: 20px 10px;
 }

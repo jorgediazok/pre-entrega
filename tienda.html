@@ -1,14 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tienda en línea</title>
+	<script type="text/javascript" src="tienda.js"></script>
+  <link rel="stylesheet" type="text/css" href="tienda.css">
+  <link
+      href="https://fonts.googleapis.com/css?family=Acme|Coiny&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 
-    <title>Tienda Virtual</title>
-  </head>
-  <body>
-    <p>PAGINA EN CONSTRUCCION :)</p>
-  </body>
+</head>
+
+<body onload="ListCar();">
+
+<div class="grid space-top">
+<h4>Comprá tu camiseta preferida de Kino</h4>
+		<div class="c6">
+			<form id="frmCadastre" class="hform">
+
+
+		            <input type="hidden" id="txtOperacion"/>
+						<label for="txtID">ID:</label>
+						<input type="text" id="txtID"/>
+
+						<label for="txtName">Name:</label>
+						<input type="text" id="txtName"/>
+
+						<label for="txtPhone">Phone:</label>
+						<input type="text" id="txtPhone"/>
+
+						<label for="txtEmail">Email:</label>
+						<input type="text" id="txtEmail"/>
+
+					<div class="text-right">
+						<button type="button"  id="btnSave" onClick="GuardarCar();"> Save </button>
+		                <button type="button"  id="btn" onClick="ListCar();"> Cargar </button>
+		            </div>
+		</div>
+		
+
+
+
+			</form>
+
+			<table id="tblList" class="table">
+
+			</table>
+</div>
+</body>
 </html>
